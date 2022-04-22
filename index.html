@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harvard Art Museum</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html">
+          <img src="Images/logo1.jpeg" />
+        </a>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-none">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown link
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- <div class="nav-links">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href=""> HOME </a>
+            </li>
+            <li>
+              <a href=""> ABOUT </a>
+            </li>
+            <li>
+              <a href=""> CONTACT </a>
+            </li>
+          </ul>
+        </div> -->
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Harvard Art Museum</h1>
+        <p>
+          Welcome to the most estimed collection of art one <br />
+          can withness under one roof
+        </p>
+        <a href="" class="hero-btn"> Visit us to know more </a>
+      </div>
+    </section>
+
+    <form>
+      <input type="text" id="search" />
+      <button>search</button>
+    </form>
+
+    <!--------------- Art Peice ------>
+
+    <section class="art">
+      <h1>Top Attractions</h1>
+      <p>
+        Here are few of the most famous peices of art that homes in our Museum
+      </p>
+
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">Art1</div>
+          <div class="col">ART2</div>
+          <div class="col">Art3</div>
+          <div class="col">Art4</div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="art-col">
+          <h3>Art1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium quam doloremque aliquam sunt omnis, tenetur impedit odio
+            corrupti pariatur recusandae.
+          </p>
+        </div>
+        <div class="art-col">
+          <h3>Art2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium quam doloremque aliquam sunt omnis, tenetur impedit odio
+            corrupti pariatur recusandae.
+          </p>
+        </div>
+        <div class="art-col">
+          <h3>Art3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium quam doloremque aliquam sunt omnis, tenetur impedit odio
+            corrupti pariatur recusandae.
+          </p>
+        </div>
+        <div class="art-col">
+          <h3>Art4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium quam doloremque aliquam sunt omnis, tenetur impedit odio
+            corrupti pariatur recusandae.
+          </p>
+        </div>
+      </div> -->
+    </section>
+
+    <!------JavaScript for Toggle Menu------->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        console.log("abc");
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
