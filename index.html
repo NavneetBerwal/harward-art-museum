@@ -31,7 +31,7 @@
           <img src="Images/logo1.jpeg" />
         </a>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-none">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-none">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Menu</a>
             <button
@@ -58,7 +58,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Pricing</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -81,11 +81,11 @@
                       <a class="dropdown-item" href="#">Something else here</a>
                     </li>
                   </ul>
-                </li> -->
+                </li> 
               </ul>
             </div>
           </div>
-        </nav>
+        </nav> -->
 
         <!-- <div class="nav-links">
           <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -101,26 +101,32 @@
             </li>
           </ul>
         </div> -->
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <!-- <i class="fa fa-bars" onclick="showMenu()"></i> -->
       </nav>
       <div class="text-box">
         <h1>Harvard Art Museum</h1>
         <p>
-          Welcome to the most estimed collection of art one <br />
-          can withness under one roof
+          Welcome to the most esteemed collection of art one <br />
+          can witness under one roof
         </p>
-        <a href="" class="hero-btn"> Visit us to know more </a>
+        <form onsubmit="return false">
+          <input type="text" id="search" />
+          <button class="searchButton" id="searchItem" type="submit">
+            Search
+          </button>
+        </form>
+        <!-- <a href="" class="hero-btn"> Visit us to know more </a> -->
+      </div>
+    </section>
+    <section style="margin-top: 20px; margin-left: 30%">
+      <div>
+        <img src="" alt="image" id="apiImage" />
       </div>
     </section>
 
-    <form>
-      <input type="text" id="search" />
-      <button>search</button>
-    </form>
-
     <!--------------- Art Peice ------>
 
-    <section class="art">
+    <!-- <section class="art">
       <h1>Top Attractions</h1>
       <p>
         Here are few of the most famous peices of art that homes in our Museum
@@ -133,9 +139,9 @@
           <div class="col">Art3</div>
           <div class="col">Art4</div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- <div class="row">
+    <!-- <div class="row">
         <div class="art-col">
           <h3>Art1</h3>
           <p>
@@ -169,7 +175,7 @@
           </p>
         </div>
       </div> -->
-    </section>
+    <!-- </section> -->
 
     <!------JavaScript for Toggle Menu------->
 
@@ -192,6 +198,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src="app.js"></script>
+    <script src="api.js"></script>
   </body>
 </html>

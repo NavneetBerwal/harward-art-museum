@@ -65,7 +65,7 @@ nav img{
 	color: white;
 	line-height: 50px;
 }
-.hero-btn{
+/* .hero-btn{
 	display: inline-block;
 	text-decoration: none;
 	color: white;
@@ -75,8 +75,40 @@ nav img{
 	background: transparent;
 	position: relative;
 	cursor: pointer;
+} */
+
+.search{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+	border: 1px solid white;
+	padding: 12px 34px;
+	font-size: 13;
 }
-.hero-btn:hover{
+
+#apiImg{
+	margin-left: 40%;
+}
+
+.searchButton{
+	background-color: white;
+    color: rgb(0, 0, 0);
+    border: transparent;
+    height: 35px;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    transition: background-color 1s;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.searchButton:hover{
 	color: black;
 	border: 1px solid #9b9898;
 	background: #9b9898;
@@ -85,10 +117,20 @@ nav img{
 nav .fa{
 	display: none;
 }
-/* @media(max-width: 700px){
+@media(max-width: 700px){
 	.text-box h1{
 		font-size: 20px;
 	}
+
+	.header img{
+		width: 60px;
+	}
+
+	.text-box p{
+		font-size: 22px;
+		line-height: 20px;
+	}
+
 	.nav-links ul li {
 		display: block;
 	}
@@ -113,17 +155,10 @@ nav .fa{
 	.nav-links ul{
 		padding: 30px;
 
-	} */
+	}
 
 
-/*-------- art works -------*/
 
-.art{
-	width: 80%;
-	margin: auto;
-	text-align: center;
-	padding-top: 100px;
-}
 h1{
 	font-size: 36px;
 	font-weight: 600;
@@ -135,8 +170,4 @@ p{
 	font-weight: 300;
 	line-height: 22px;
 	padding: 10px;
-}
-
-.nav-item{
-	color: white;
 }
